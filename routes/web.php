@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::resource('patients','PatientsController');
+Route::resource('patients.metrics','PatientsMetricsController');
