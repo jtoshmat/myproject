@@ -8,10 +8,10 @@ class PatientsMetricsController extends Controller
 {
 	/**
 	 * Display a listing of the resource.
-	 *
+	 * @param  int  $patientId
 	 * @return \Illuminate\Http\Response
 	 */
-	public function index()
+	public function index($patientId)
 	{
 		$parms = [
 			'id' => null,
@@ -22,10 +22,10 @@ class PatientsMetricsController extends Controller
 
 	/**
 	 * Show the form for creating a new resource.
-	 *
+	 * @param  int  $patientId
 	 * @return \Illuminate\Http\Response
 	 */
-	public function create()
+	public function create($patientId)
 	{
 		$parms = [
 			'message' => 'Displaying a create a new patient metrics form'
@@ -35,11 +35,11 @@ class PatientsMetricsController extends Controller
 
 	/**
 	 * Store a newly created resource in storage.
-	 *
+	 * @param  int  $patientId
 	 * @param  \Illuminate\Http\Request  $request
 	 * @return \Illuminate\Http\Response
 	 */
-	public function store(Request $request)
+	public function store(Request $request, $patientId)
 	{
 		$parms = [
 			'message' => 'Saving the create a new patient metrics form'
