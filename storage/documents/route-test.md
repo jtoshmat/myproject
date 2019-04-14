@@ -37,3 +37,15 @@ To invoke the Routing class we'll be calling it statically. For example we'll be
 Route::resource('patients');
 Route::resource('patients.metrics');
 ```
+
+## Jon Toshmatov's response
+
+```
+There is a Laravel recommended way to create routes by using resources
+and another way is to create individual routes.
+I hope you I understood what is being asked but if you need me to write any more code, please let me know.
+Thanks,
+
+Jon Toshmatov
+04/14/2019 9:26 AM EST.
+```
